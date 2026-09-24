@@ -1,11 +1,16 @@
-import { UserButton } from '@clerk/nextjs'
+import ProjectList from '@/components/custom/dashboard/ProjectList'
+import { WelcomBanner } from '@/components/custom/dashboard/WelcomBanner'
 import React from 'react'
 
 const DashboardPage = () => {
   return (
     <div>
-        {/* <UserButton/> */}
-        <h2>Mai main dash board hoon</h2>
+        {/* welcome banner */}
+        <WelcomBanner/>
+        
+        {/* project list / empty state  */}
+        <ProjectList/>
+
     </div>
   )
 }
