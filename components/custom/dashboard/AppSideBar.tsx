@@ -16,6 +16,7 @@ import { Archive, LayoutGrid, Settings, Sparkles, User } from "lucide-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
+import CreateNewBoardDialog from "./CreateNewBoardDialog";
 
 export function AppSidebar() {
   const path = usePathname();
@@ -31,7 +32,9 @@ export function AppSidebar() {
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
-          <Button>+ Create New Board</Button>
+          {/* <Button>+ Create New Board</Button>
+           */}
+           <CreateNewBoardDialog/>
         </SidebarGroup>
         <SidebarGroup>
           <SidebarGroupLabel>My Boards</SidebarGroupLabel>
@@ -73,7 +76,9 @@ export function AppSidebar() {
         <SidebarGroup></SidebarGroup>
       </SidebarContent>
       <SidebarFooter>
-        <Button>+ Create New Board</Button>
+        {/* <Button>+ Create New Board</Button>
+         */}
+         <CreateNewBoardDialog/>
         <div>
             <h2 className="text-sm flex justify-between">2 files created <span>total 3</span></h2>
             <Progress value = {20} className = "h-2 mt-2"/>
