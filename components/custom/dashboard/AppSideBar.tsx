@@ -85,7 +85,7 @@ export function AppSidebar() {
         </div>
 
         <div className="flex items-center gap-2 p-4 border rounded-md">
-            <Image src = {user?.imageUrl??''} alt="User Image" width={40} height={40}
+            <Image src = {user?.imageUrl??""} alt="User Image" width={40} height={40}
             className="rounded-full"
             />
             <h2>{user?.firstName} {user?.lastName}</h2>
