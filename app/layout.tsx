@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Provider from "./provider";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/toast";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -35,6 +36,7 @@ export default function RootLayout({
       <html lang="en">
         <body style={{ margin: 0, padding: 0 }}>
           <Provider>{children}</Provider>
+          <Toaster/>
         </body>
       </html>
     </ClerkProvider>
